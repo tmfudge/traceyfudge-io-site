@@ -12,69 +12,77 @@
       margin: 0;
       padding: 0;
       line-height: 1.6;
-      color: #333;
+      color: #000;
+      background-color: #fff;
     }
+
     header {
-      background: #4CAF50;
-      color: #fff;
-      padding: 20px 0;
       text-align: center;
+      padding: 40px 0;
+      border-bottom: 2px solid #000;
     }
+
     header h1 {
       margin: 0;
       font-size: 2.5rem;
     }
+
     header p {
-      font-size: 1.2rem;
       margin: 0;
+      font-size: 1.2rem;
     }
+
     section {
       padding: 20px;
-      max-width: 1000px;
+      max-width: 800px;
       margin: auto;
     }
+
     .services {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       margin: 30px 0;
     }
+
     .service-card {
-      background: #f9f9f9;
+      background: #fff;
       padding: 20px;
       margin: 10px;
+      border: 1px solid #000;
       border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
       flex: 1;
       text-align: center;
       transition: transform 0.2s;
     }
+
     .service-card:hover {
       transform: scale(1.05);
     }
+
     .service-card h2 {
-      color: #4CAF50;
+      color: #000;
       margin-bottom: 10px;
     }
+
     .service-card p {
       font-size: 1rem;
       line-height: 1.5;
     }
+
     .form-section {
-      background: #f4f4f4;
       padding: 40px 20px;
-      border-top: 2px solid #ddd;
-    }
-    .form-section h2 {
       text-align: center;
-      color: #4CAF50;
-      margin-bottom: 20px;
+      border-top: 2px solid #000;
     }
+
     iframe {
       display: block;
       margin: auto;
     }
+
     footer {
-      background: #333;
+      background: #000;
       color: #fff;
       text-align: center;
       padding: 10px 0;
@@ -89,9 +97,6 @@
   </header>
 
   <section>
-    <h2>What I Do</h2>
-    <p>I empower businesses to unlock their potential with cutting-edge AI solutions, advanced data analytics, and seamless marketing operations workflows. Explore the services below to see how I can transform your operations:</p>
-
     <div class="services">
       <div class="service-card">
         <h2>AI Engineering</h2>
@@ -109,8 +114,7 @@
   </section>
 
   <section class="form-section">
-    <h2>Get in Touch</h2>
-    <p>Interested in working with me? Fill out the form below, and I'll get back to you!</p>
+    <!-- Google Form Embed -->
     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdPeAsCuKmMZswaDO8Ig83Q5iqul0DeEAsPyxTwdO49DMiaYg/viewform?embedded=true" 
             width="640" 
             height="852" 
