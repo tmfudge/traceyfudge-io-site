@@ -1,9 +1,146 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Home</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tracey Fudge Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #f4f4f4, #ffffff);
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px;
+      background: #333;
+      color: #fff;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    .section {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .section:nth-child(odd) {
+      background: #eaeaea;
+    }
+
+    .section:nth-child(even) {
+      background: #ffffff;
+    }
+
+    .section:hover {
+      transform: scale(1.05);
+    }
+
+    .section h2 {
+      font-size: 2.5rem;
+      color: #333;
+    }
+
+    .section p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      color: #555;
+    }
+
+    .form-section {
+      background: #333;
+      color: #fff;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .form-section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .form-section form {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .form-section input, .form-section textarea, .form-section button {
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    .form-section input, .form-section textarea {
+      background: #444;
+      color: #fff;
+    }
+
+    .form-section button {
+      background: #ff9800;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .form-section button:hover {
+      background: #e68900;
+    }
+  </style>
 </head>
 <body>
-<h1>Welcome to My New Portfolio</h1>
+  <header>
+    <h1>Welcome to Tracey Fudge's Portfolio</h1>
+    <p>Explore my expertise in AI Engineering, Data Science, and Marketing Operations.</p>
+  </header>
+
+  <div class="section">
+    <div>
+      <h2>AI Engineering</h2>
+      <p>Build intelligent systems that transform business operations. From custom AI agents to advanced integrations, I design scalable solutions tailored to your needs.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div>
+      <h2>Data Science & Analytics</h2>
+      <p>Transform raw data into actionable insights. I specialize in predictive modeling, data visualization, and advanced analytics to drive better decisions.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div>
+      <h2>Marketing Operations</h2>
+      <p>Streamline your marketing workflows with automation and analytics. I bridge the gap between marketing strategies and cutting-edge technology.</p>
+    </div>
+  </div>
+
+  <div class="form-section">
+    <h2>Get in Touch</h2>
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
 </body>
 </html>
