@@ -4,143 +4,125 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tracey Fudge Portfolio</title>
+  <title>Tracey Fudge - AI Engineering & Analytics</title>
   <style>
+    /* General Styling */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: linear-gradient(to bottom, #f4f4f4, #ffffff);
-      overflow-x: hidden;
-    }
-
-    header {
-      text-align: center;
-      padding: 50px 20px;
-      background: #333;
-      color: #fff;
-    }
-
-    header h1 {
-      font-size: 3rem;
-      margin: 0;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      margin-top: 10px;
-    }
-
-    .section {
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 20px;
-      transition: transform 0.5s ease-in-out;
-    }
-
-    .section:nth-child(odd) {
-      background: #eaeaea;
-    }
-
-    .section:nth-child(even) {
-      background: #ffffff;
-    }
-
-    .section:hover {
-      transform: scale(1.05);
-    }
-
-    .section h2 {
-      font-size: 2.5rem;
+      line-height: 1.6;
       color: #333;
     }
-
-    .section p {
-      font-size: 1.2rem;
-      margin-top: 10px;
-      color: #555;
-    }
-
-    .form-section {
-      background: #333;
+    header {
+      background: #4CAF50;
       color: #fff;
-      padding: 50px 20px;
+      padding: 20px 0;
       text-align: center;
     }
-
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin: 0;
+    }
+    section {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .services {
+      display: flex;
+      justify-content: space-between;
+      margin: 30px 0;
+    }
+    .service-card {
+      background: #f9f9f9;
+      padding: 20px;
+      margin: 10px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      flex: 1;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .service-card:hover {
+      transform: scale(1.05);
+    }
+    .service-card h2 {
+      color: #4CAF50;
+      margin-bottom: 10px;
+    }
+    .service-card p {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+    .form-section {
+      background: #f4f4f4;
+      padding: 40px 20px;
+      border-top: 2px solid #ddd;
+    }
     .form-section h2 {
-      font-size: 2rem;
+      text-align: center;
+      color: #4CAF50;
       margin-bottom: 20px;
     }
-
-    .form-section form {
-      max-width: 500px;
-      margin: 0 auto;
+    iframe {
+      display: block;
+      margin: auto;
     }
-
-    .form-section input, .form-section textarea, .form-section button {
-      width: 100%;
-      margin-bottom: 15px;
-      padding: 10px;
-      border: none;
-      border-radius: 5px;
-      font-size: 1rem;
-    }
-
-    .form-section input, .form-section textarea {
-      background: #444;
+    footer {
+      background: #333;
       color: #fff;
-    }
-
-    .form-section button {
-      background: #ff9800;
-      color: #fff;
-      cursor: pointer;
-    }
-
-    .form-section button:hover {
-      background: #e68900;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 20px;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Welcome to Tracey Fudge's Portfolio</h1>
-    <p>Explore my expertise in AI Engineering, Data Science, and Marketing Operations.</p>
+    <h1>Tracey Fudge</h1>
+    <p>AI Engineering | Data Science & Analytics | Marketing Operations</p>
   </header>
 
-  <div class="section">
-    <div>
-      <h2>AI Engineering</h2>
-      <p>Build intelligent systems that transform business operations. From custom AI agents to advanced integrations, I design scalable solutions tailored to your needs.</p>
-    </div>
-  </div>
+  <section>
+    <h2>What I Do</h2>
+    <p>I empower businesses to unlock their potential with cutting-edge AI solutions, advanced data analytics, and seamless marketing operations workflows. Explore the services below to see how I can transform your operations:</p>
 
-  <div class="section">
-    <div>
-      <h2>Data Science & Analytics</h2>
-      <p>Transform raw data into actionable insights. I specialize in predictive modeling, data visualization, and advanced analytics to drive better decisions.</p>
+    <div class="services">
+      <div class="service-card">
+        <h2>AI Engineering</h2>
+        <p>From predictive modeling to AI-powered automation, I design intelligent systems that solve complex problems. My expertise includes building machine learning pipelines, integrating AI tools, and leveraging GPT-based systems to optimize your business processes.</p>
+      </div>
+      <div class="service-card">
+        <h2>Data Science & Analytics</h2>
+        <p>Turn your data into actionable insights. I specialize in advanced analytics, data visualization, and predictive modeling to help you make informed, data-driven decisions. Whether it's customer segmentation or forecasting, I bring clarity to complexity.</p>
+      </div>
+      <div class="service-card">
+        <h2>Marketing Operations</h2>
+        <p>I streamline your marketing workflows with automation and integrated tools, ensuring your campaigns are efficient and measurable. From lead scoring and CRM integrations to attribution modeling, I help marketing teams achieve their goals faster and smarter.</p>
+      </div>
     </div>
-  </div>
+  </section>
 
-  <div class="section">
-    <div>
-      <h2>Marketing Operations</h2>
-      <p>Streamline your marketing workflows with automation and analytics. I bridge the gap between marketing strategies and cutting-edge technology.</p>
-    </div>
-  </div>
-
-  <div class="form-section">
+  <section class="form-section">
     <h2>Get in Touch</h2>
-    <form id="contactForm">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit">Submit</button>
-    </form>
-  </div>
+    <p>Interested in working with me? Fill out the form below, and I'll get back to you!</p>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdPeAsCuKmMZswaDO8Ig83Q5iqul0DeEAsPyxTwdO49DMiaYg/viewform?embedded=true" 
+            width="640" 
+            height="852" 
+            frameborder="0" 
+            marginheight="0" 
+            marginwidth="0">
+      Loading…
+    </iframe>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Tracey Fudge. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
